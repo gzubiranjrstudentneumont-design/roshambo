@@ -7,7 +7,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 
 FROM tomcat:10.0
-LABEL maintainer="gabrielzubiranjr@student.neumont.edu"
+LABEL maintainer="gzubiranjr@student.neumont.edu"
 ADD roshambo.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
