@@ -1,8 +1,6 @@
 # Dockerfile for Roshambo
-FROM tomcat:9.0
+FROM tomcat:10.0
 LABEL maintainer="gzubiranjr@student.neumont.edu"
-ADD target/roshambo.war /usr/local/tomcat/webapps
-ADD target/roshambo/game.html /usr/local/tomcat/webapps/roshambo/index.html
+ADD roshambo.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
-
