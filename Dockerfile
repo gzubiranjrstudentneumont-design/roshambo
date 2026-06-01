@@ -6,8 +6,3 @@ ADD target/roshambo/game.html /usr/local/tomcat/webapps/roshambo/index.html
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 
-FROM tomcat:10.0
-LABEL maintainer="gzubiranjr@student.neumont.edu"
-ADD roshambo.war /usr/local/tomcat/webapps/
-EXPOSE 8080
-CMD ["catalina.sh", "run"]
